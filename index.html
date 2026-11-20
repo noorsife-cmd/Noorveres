@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171522">
+  <meta name="description" content="Documenting the journey of building the life I imagine.">
+  <title>NOORVERSE — A World of My Own</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --night: #171522;
+      --panel: #211e30;
+      --cream: #f5eddf;
+      --muted: #c7bdc9;
+      --lavender: #c7a9ed;
+      --peach: #f2bda6;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 18% 12%, rgba(199,169,237,.16), transparent 34rem),
+        radial-gradient(ellipse at 88% 82%, rgba(242,189,166,.10), transparent 30rem),
+        var(--night);
+      color: var(--cream);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: inherit; }
+    .shell { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 28px 0; }
+    .wordmark { font: 700 13px/1.2 system-ui, sans-serif; letter-spacing: .22em; }
+    .nav-note { color: var(--muted); font: 12px system-ui, sans-serif; letter-spacing: .08em; }
+    main { min-height: 76vh; display: grid; align-items: center; padding: 70px 0 100px; }
+    .hero { max-width: 820px; position: relative; }
+    .eyebrow { color: var(--peach); font: 12px system-ui, sans-serif; letter-spacing: .24em; text-transform: uppercase; }
+    h1 { margin: 24px 0 20px; font-size: clamp(56px, 10vw, 112px); font-weight: 400; line-height: .98; letter-spacing: -.055em; }
+    h1 span { color: var(--lavender); font-style: italic; }
+    .lead { max-width: 590px; color: var(--muted); font-size: clamp(18px, 2.3vw, 23px); line-height: 1.65; }
+    .divider { width: 76px; height: 1px; margin: 42px 0 28px; background: linear-gradient(90deg, var(--peach), transparent); }
+    .mantra { display: flex; flex-wrap: wrap; gap: 12px 24px; color: var(--cream); font: 12px system-ui, sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+    .mantra span { white-space: nowrap; }
+    .mantra span + span::before { content: "✦"; color: var(--peach); margin-right: 24px; }
+    footer { border-top: 1px solid rgba(245,237,223,.14); padding: 22px 0 30px; color: var(--muted); font: 11px system-ui, sans-serif; letter-spacing: .08em; }
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 36px, 1120px); }
+      header { padding: 22px 0; }
+      main { min-height: 70vh; padding: 56px 0 76px; }
+      .nav-note { max-width: 120px; text-align: right; line-height: 1.5; }
+      .mantra { gap: 12px 14px; font-size: 10px; letter-spacing: .12em; }
+      .mantra span + span::before { margin-right: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="wordmark">NOORVERSE</div>
+      <div class="nav-note">A personal world in progress</div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow">Welcome to</div>
+        <h1 id="hero-title">A World<br>of <span>My Own.</span></h1>
+        <p class="lead">Documenting the journey of building the life I imagine.</p>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="mantra" aria-label="Imagine. Learn. Create. Become.">
+          <span>Imagine</span><span>Learn</span><span>Create</span><span>Become</span>
+        </div>
+      </section>
+    </main>
+    <footer>NOORVERSE · A World of My Own</footer>
+  </div>
+</body>
+</html>
